@@ -87,7 +87,12 @@ function inline_response($query_id, $query_text) {
 			'ident' => 'telethondocs',
 			'url' => 'https://lonamiwebs.github.io/Telethon/?q=' . urlencode($query_text),
 			'name' => '📖 Telethon Docs',
-]
+		], 		[
+			'ident' => 'TGMoviesBot',
+			'url' => 'https://t.me/TGMoviesBot/?start=srch_' . urlencode($query_text),
+			'name' => ' TeleGram File Search',
+			'thumb_url' => 'https://TGMoviesBot.sitein.org/TGMoviesBot.jpg'
+		]
 	];
 	$results = array();
 	foreach($urls as $value) {
